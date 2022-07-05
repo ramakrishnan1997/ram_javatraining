@@ -1,0 +1,13 @@
+package com.crud.emp;
+
+public class Employee {
+	
+	String empId;
+	String name;
+	String age;
+	String designation;
+	String phone;
+	String salary;
+
+
+}

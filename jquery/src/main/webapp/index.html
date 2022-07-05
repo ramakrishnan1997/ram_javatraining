@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Jquery</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+ integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" 
+ crossorigin="anonymous"></script>
+ <script type="text/javascript">
+ function load() {
+	alert("i am first")
+}
+$(function(){
+	alert("i am second");
+	$("#heading").css("color","green");
+alert($("#heading").text());
+});
+</script>
+</head>
+<body>
+<h1 id="heading">Jquery</h1>
+</body>
+</html>

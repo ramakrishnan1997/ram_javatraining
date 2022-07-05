@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Using scope</title>
+<script type="text/javascript">
+function back() {
+	history.back();
+}
+</head>
+<body>
+<a href="#" onclick="back()">previous</a>
+<a href="usingjsobject.html">Next</a>
+<script type="text/javascript" src="scripts/scope.js"></script>
+</body>
+</html>

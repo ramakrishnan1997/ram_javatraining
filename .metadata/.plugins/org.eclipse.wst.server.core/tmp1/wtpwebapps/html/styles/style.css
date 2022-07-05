@@ -1,0 +1,48 @@
+@charset "UTF-8";
+h4{
+	
+	color:#AA12CC;
+}
+
+.centerText
+{
+	text-align:center;
+}
+.light
+{
+	color:#73d216;
+}
+.dark
+{
+	color:#2e3436;
+}
+.darker
+{
+	color:#ef2929;
+}
+
+table
+{
+	border:1px solid blue;
+	border-collapse:collapse;
+	margin-left:auto;
+	margin-right:auto;
+}
+th,tr,td
+{
+	border:1px solid blue;
+}
+.background
+{
+	background-image:url("../images/index.jpeg");
+	background-repeat:no-repeat; 
+	background-size:cover; 
+}
+.left
+{
+float: left
+}
+.right
+{
+float: right
+}

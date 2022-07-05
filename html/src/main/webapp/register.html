@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Register User</title>
+<style type="text/css">
+ul>li
+{
+display:inline;
+margin-left: 50px;
+}
+a
+{
+text-decoration: none;
+font-size: 1.2em;
+}
+.smallImage
+{
+width: 100px;
+height: 100px;
+border :1px solid blue;
+border-radius: 10px;
+}
+.left
+{
+float: left
+}
+.right
+{
+float: right
+}
+</style>
+</head>
+<body>
+	<header>
+	<img alt="Images of book" src="images/index.jpeg" class="smallImage left">
+	<img alt="Images of book" src="images/index.jpeg" class="smallImage right">
+		<nav>
+		<ul style="margin-left:100px">
+<li><a href="aboutus.html">About Us</a></li>
+<li><a href="client.html">Client</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+	</header>
+	<section style="width : 100%; background-color: grey">
+		
+			<article style="width: 30%" class="left">
+			<p style="background-color: yellow">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error odio saepe nemo delectus in repellendus magnam suscipit vero consequatur nesciunt ipsum quis rem fuga nisi impedit soluta et dolorem veritatis!
+			</p>
+			</article>
+			<article style="width: 40%" class="right">
+				<form action="client.html" method="post">
+				    <div>
+				    <label for="firstname">First Name</label> 
+					<input type="text" name="firstname" id="firstname" required/> 
+				    </div>
+					<div>
+				    <label for="email">EmailId</label>
+					<input type="text" name="email" id="email" multiple="multiple"/> 
+				    </div>
+					<div>
+					<label for="birthdate">BirthDate</label>
+					<input type="date" name="birthdate" id="birthdate"/>
+					</div>
+					<div>
+					<label for="mobile">Mobile</label>
+					<input type="tel" name="phonenumber" id="mobile" pattern="[0-9]{10}"/>
+					</div>
+					<div>
+					<label for="qualification">Qualification</label> 
+					</div>
+					<div>
+					
+					<input type="radio" value="Undergraduate" name="qualification"  /> 
+					<label for="ug">Undergraduate</label> 
+					</div>
+					<div>
+					<input type="radio" value="Postgraduate" name="qualification"/> 
+					<label for="pg">Postgraduate</label>
+					</div>
+					<div>
+					
+					<label for="skill">Skill Set</label> 
+					</div>
+					<div>
+					<label for="java">Java</label>
+					<input type="checkbox" value="java" name="skill" id="java" />
+					</div>
+					<div>
+					<label for="spring">Spring</label> 
+					<input type="checkbox" value="spring" name="skill" id="spring" />
+					</div>
+					<div>
+					<label for="notes">Notes</label> 
+					<textarea name="notes" cols="30" rows="5" id="notes" placeholder=" Enter a brief summary"></textarea>
+					</div>
+					<div>
+					<input type="reset" value="Clear"/>
+					<input type="submit" value="submit"/>
+					</div>
+					
+				</form>
+			</article>
+		
+		<footer> </footer>
+	</section>
+</body>
+</html>

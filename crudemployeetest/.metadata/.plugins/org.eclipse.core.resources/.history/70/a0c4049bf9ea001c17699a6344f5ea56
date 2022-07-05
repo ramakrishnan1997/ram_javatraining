@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Enter Salary Details</h1>
+<form action ="SalaryListServlet">
+Salary<input type="text" name="salary"></br>
+<input type="submit" value="List" ></br>
+</form>
+</body>
+</html>

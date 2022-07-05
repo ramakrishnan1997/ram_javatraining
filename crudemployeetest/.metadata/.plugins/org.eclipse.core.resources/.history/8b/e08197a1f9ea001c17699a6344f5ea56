@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Delete the employee by empId</h1>
+<form action ="DeleteServlet">
+Emp.Id<input type="text" name="empId">
+<input type="submit" value="Delete" >
+</form>
+<a href="http://localhost:8080/CrudOperationEmp/delete.html">Delete</a></br>
+<a href="http://localhost:8080/CrudOperationEmp/updatehtml.html">Update</a></br>
+<a href="ListSservlet">List</a></br>
+<a href="http://localhost:8080/CrudOperationEmp/salarylist.html">Above salary list</a></br>
+</body>
+</html>

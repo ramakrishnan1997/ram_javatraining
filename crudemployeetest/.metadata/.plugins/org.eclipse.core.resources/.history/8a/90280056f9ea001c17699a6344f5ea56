@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body> 
+<h1>Enter the Employee Details</h1>
+<form action ="LoginServlet">
+Emp.Id<input type="text" name="empId"></br>
+Name<input type="text" name="name"></br>
+Age<input type="text" name="age"></br>
+Designation<input type="text" name="designation"></br>
+Phone Number<input type="text" name="phone"></br>
+Salary<input type="text" name="salary"></br>
+<input type="submit" value="login" ></br>
+</form>
+<a href="http://localhost:8080/CrudOperationEmp/delete.html">Delete</a></br>
+<a href="http://localhost:8080/CrudOperationEmp/updatehtml.html">Update</a></br>
+<a href="ListSservlet">List</a></br>
+<a href="">Above salary list</a></br>
+</body>
+</html>

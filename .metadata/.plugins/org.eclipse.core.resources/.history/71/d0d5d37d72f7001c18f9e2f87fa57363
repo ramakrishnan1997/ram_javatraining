@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+function setcookie()
+{
+	
+}
+function readcookie()
+{
+	
+}
+(function(){
+	setcookie();
+})();

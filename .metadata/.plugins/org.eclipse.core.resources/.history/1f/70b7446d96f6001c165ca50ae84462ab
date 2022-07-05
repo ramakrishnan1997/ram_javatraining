@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Event Handling</title>
+</head>
+<body>
+<form action="">
+
+FirstName:<input type="text" name="firstname" id="firstname"/>
+LastName:<input type="text" name="lasname" id="lastname"/>
+Code:<input type="text" name="code" id="code"/>
+</form>
+<script type="text/javascript">
+var firstname=document.getElementById("firstname");
+var lastname=document.getElementById("lastname");
+var code=document.getElementById("code");
+var s;
+var p;
+firstname.addEventListener("blur",function()
+		{
+	var nameEnetered=firstname.value;
+s=code.value=nameEnetered.substring(0,3);
+});
+
+lastname.addEventListener("blur",function()
+		{
+	var nameEnetered1=lastname.value;
+	s=code.value=nameEnetered1.substring(0,3);
+	code.value=string.concat(s);
+});
+
+
+</script>
+</body>
+</html>

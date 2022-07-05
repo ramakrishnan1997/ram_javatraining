@@ -1,0 +1,20 @@
+package com.crud.emp;
+
+import java.sql.*;
+
+public class CrudOperation {
+	public static int insert(Employee e) throws ClassNotFoundException, SQLException {
+		int flag =0;
+		Connection con =JdbcConnection.getConnection();
+		PreparedStatement st =con.prepareStatement("insert into employee(empid,name,age,designation,phone,salary) values (?,?,?,?,?,?)");
+		st.setString(1, e.getEmpId());
+		st.setString(2, e.getName());
+		st.setString(3, e.getAge());
+		st.setString(4, e.getDesignation());
+		st.setString(5, e.getPhone());
+		st.setString(6, e.getSalary());
+		flag =st.executeUpdate();
+		return flag;
+	}
+
+}

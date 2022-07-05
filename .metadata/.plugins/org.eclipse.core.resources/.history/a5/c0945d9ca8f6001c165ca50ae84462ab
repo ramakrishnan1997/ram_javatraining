@@ -1,0 +1,32 @@
+/**
+ * 
+ */
+// Simple funtion
+
+function simple()
+{
+	console.log("Hello World");
+}
+
+function withArgs(name)
+{
+	if(name==null)
+	{
+		document.write("Welcome Guest");
+	}
+	else
+	{
+        document.write("welcome"+name)
+}	
+}
+var usdToInr =function(usd)
+{
+	return usd*0.80;
+}
+
+(function(){
+	//simple();
+	//withArgs('ram');
+	//wthArgs();
+	usdToInr(100);
+})();

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function hidePara(){
+	var para1 = document.getElementById("para1");
+	para1.style.display="none";
+	var showBtn=document.getElementById("hide");
+	showBtn.style.display="none";
+	var showBtn=document.getElementById("showBtn");
+	showBtn.style.display="block";
+	
+}
+function showPara() 
+{
+	var showBtn =document.getElementById("para1");
+	para1.style.display="block";
+	
+}
+</script>
+</head>
+<body>
+<button id="hide" onclick="hidePara()">hide</button>
+<button id="showBtn" onclick="showPara()">show</button>
+<p id="para1">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi suscipit eum dolorem atque harum incidunt illo velit deleniti at aliquid explicabo praesentium mollitia nesciunt eveniet quisquam voluptas aperiam aut temporibus!
+</p>
+<script type="text/javascript">
+var showBtn=document.getElementById("showBtn");
+showBtn.style.display="none";
+var hideBtn =document.getElementById("hide");
+hideBtn.addEventListener('click',hidePara);
+</script>
+</body>
+</html>

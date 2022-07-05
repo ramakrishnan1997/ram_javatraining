@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<button id="googleBtn">Google</button>
+<button id="openBtn">Open Window</button>
+<button id="printbtn">Print</button>
+<script type="text/javascript" src="scripts/object.js"></script>
+</body>
+</html>

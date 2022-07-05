@@ -1,0 +1,22 @@
+package com.taining.model;
+
+import java.util.List;
+
+import com.taining.intface.TravelRepository;
+
+public class TravelRepo implements TravelRepository<Travel> {
+   private List<Travel> travellist;
+	
+	@Override
+	public Travel add(Travel t) {
+		boolean added=this.travellist.add(t);
+		if(added)
+		{
+			return t;
+		}
+		else
+		{
+		return null;
+	}
+	}
+}

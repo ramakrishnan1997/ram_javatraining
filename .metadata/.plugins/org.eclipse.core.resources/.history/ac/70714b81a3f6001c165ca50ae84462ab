@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+// Simple funtion
+
+(function simple()
+{
+	console.log("Hello World");
+})();
+(function(){
+	simple();
+})();

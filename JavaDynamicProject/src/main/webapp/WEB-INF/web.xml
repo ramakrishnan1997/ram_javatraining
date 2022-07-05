@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>JavaDynamicProject</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  <servlet-name>WelcomeServlet</servlet-name>
+  <servlet-class>com.javasetlet.program.WelcomeServlet</servlet-class>
+  <init-param>
+  <param-name>Message </param-name>
+  <param-value>Hi from config</param-value>
+  </init-param>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>WelcomeServlet</servlet-name>
+  <url-pattern>/WelcomeSe</url-pattern>
+  </servlet-mapping>
+  
+  <context-param>
+  <param-name>Greetings</param-name>
+  <param-value>Thanks</param-value>
+  </context-param>
+  
+  <servlet>
+  <servlet-name>DemoSessionOne</servlet-name>
+  <servlet-class>com.demo.servlet.DemoSessionOne</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>DemoSessionOne</servlet-name>
+  <url-pattern>/Demo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>MyFirstSevletHidden</servlet-name>
+  <servlet-class>com.demo.servlet.MyFirstSevletHidden</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>MyFirstSevletHidden</servlet-name>
+  <url-pattern>/servlet1</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>MySecondServlet</servlet-name>
+  <servlet-class>com.demo.servlet.MySecondServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>MySecondServlet</servlet-name>
+   <url-pattern>/servlet2</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>FirstUrlRewriting</servlet-name>
+  <servlet-class>com.demo.servlet.FirstUrlRewriting</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>FirstUrlRewriting</servlet-name>
+  <url-pattern>/servlet3</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>SecondUrlRewriting</servlet-name>
+  <servlet-class>com.demo.servlet.SecondUrlRewriting</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>SecondUrlRewriting</servlet-name>
+   <url-pattern>/servlet4</url-pattern>
+  </servlet-mapping>
+  
+
+ 
+</web-app>

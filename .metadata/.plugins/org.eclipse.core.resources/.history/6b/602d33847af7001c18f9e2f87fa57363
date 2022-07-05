@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Event Handling</title>
+</head>
+<body>
+<form action="">
+
+FirstName:<input type="text" name="firstname" id="firstname"/>
+LastName:<input type="text" name="lasname" id="lastname"/>
+Code:<input type="text" name="code" id="code"/>
+</form>
+<script type="text/javascript" src="scripts/cookies.js">
+
+readcookie();
+</script>
+<script type="text/javascript">
+readcookie();
+var firstname=document.getElementById("firstname");
+var lastname=document.getElementById("lastname");
+var code=document.getElementById("code");
+var firstname;
+var secondname;
+firstname.addEventListener("blur",function()
+		{
+	var nameEnetered=firstname.value;
+	firstname=nameEnetered.substring(0,3);
+});
+
+lastname.addEventListener("blur",function()
+		{
+	var nameEnetered1=lastname.value;
+	secondname=nameEnetered1.substring(nameEnetered1.length-3,nameEnetered1.length);
+	code.value=firstname.concat(secondname);
+});
+
+
+</script>
+</body>
+</html>

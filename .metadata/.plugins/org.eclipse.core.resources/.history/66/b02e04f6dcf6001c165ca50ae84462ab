@@ -1,0 +1,42 @@
+/**
+ * 
+ */
+function incFontSize()
+{
+var para = document.getElementById("firstpara");
+para.setAttribute("class","fontsizeup");
+var downpara = document.getElementById("firstpara");
+downpara.setAttribute("class","fontsizedown");
+}
+function addclickEvent()
+{
+	var imgRef = document.getElementById("increment");
+	imgRef.addEventListener("click",incFontSize);
+}
+function decrementclickevent()
+{
+	var imgRefdown = document.getElementById("decrement");
+	imgRefdown.addEventListener("click",incFontSize);
+}
+(function(){
+	addclickEvent();
+	decrementclickevent();
+})();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

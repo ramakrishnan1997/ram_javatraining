@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action ="LoginServlet">
+Emp.Id<input type="text" name="empId">
+Name<input type="text" name="name">
+Age<input type="text" name="age">
+Designation<input type="text" name="designation">
+Phone Number<input type="text" name="phone">
+Salary<input type="text" name="salary">
+<input type="submit" value="login" >
+</form>
+
+</body>
+</html>

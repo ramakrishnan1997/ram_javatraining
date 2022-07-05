@@ -1,0 +1,122 @@
+/**
+ * 
+ */
+function validate()
+{
+	
+	console.log("validate called");
+	var textflds =document.getElementsByTagName("input");
+	for(var i=0;i<textflds.lenth;i++)
+	{
+	console.log(textflds[i].value);
+	if(textflds[i].value == "")
+	{
+		
+		document.getElementById("msg").innerHTML="Required should not be blank";
+		return false;
+	}
+	}
+}
+
+function init()
+{
+	var frmElement = document.getElementById("regForm");
+	frmElement.addEventListener("submit",validate);
+}
+(function()
+{
+	init();
+})();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

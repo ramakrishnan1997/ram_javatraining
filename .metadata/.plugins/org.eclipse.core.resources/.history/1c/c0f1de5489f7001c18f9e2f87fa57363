@@ -1,0 +1,113 @@
+/**
+ * 
+ */
+function validate()
+{
+	
+	console.log("validate called");
+	var textflds =document.getElementsByTagNameById("input");
+	console.log(textflds);
+}
+
+function init()
+{
+	var frmElement = document.getElementById("regForm");
+	frmElement.addEventListener("submit",validate);
+}
+(function()
+{
+	init();
+})();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

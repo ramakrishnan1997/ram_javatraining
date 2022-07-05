@@ -1,0 +1,16 @@
+/**
+ * 
+ */
+var name="global Hospital";
+var phone=25324524446;
+
+function show()
+{
+	console.log("name"+name);
+	console.log("phone"+phone);
+}
+function invoke()
+{
+	show();
+}
+invoke();

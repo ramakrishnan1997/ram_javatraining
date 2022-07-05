@@ -1,0 +1,18 @@
+/**
+ * 
+ */
+
+function usingObjectLiteral()
+{
+	var book = new object();
+	book.bookname ="kathy sieera";
+	book.discount = function()
+	{
+		return 1.05;
+	}
+	document.write("Book Name"+book.bookname);
+	document.write("Discount"+book.discount());
+}
+(function(){
+	usingObjectLiteral();
+})();

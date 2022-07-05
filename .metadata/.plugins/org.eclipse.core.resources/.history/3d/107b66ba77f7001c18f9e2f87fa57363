@@ -1,0 +1,23 @@
+/**
+ * 
+ */
+function setcookie()
+{
+	var name="collor size";
+	var value=40;
+	document.cookie =name+"="+value;
+}
+function readcookie()
+{
+	var mycookie = document.cookie;
+	var cookie = unescape(mycookie);
+	var cooklist = cookie.split(";");
+	sizecookie = cookielist[0];
+	var values =sizecookie.split("=");
+	document.write("i will show models & brand for size "+values); 
+	
+}
+(function(){
+	setcookie();
+	readcookie();
+})();

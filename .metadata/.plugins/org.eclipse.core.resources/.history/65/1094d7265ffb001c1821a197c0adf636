@@ -1,0 +1,33 @@
+package com.taining.model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.taining.intface.TravelRepository;
+
+public class TravelRepo implements TravelRepository<Travel> {
+   private List<Travel> travellist;
+	
+	public TravelRepo() {
+	super();
+	this.travellist=new ArrayList<Travel>();
+}
+
+	public Travel add(Travel t) {
+		boolean added=this.travellist.add(t);
+		if(added)
+		{
+			return t;
+		}
+		else
+		{
+		return null;
+	}
+	}
+
+	@Override
+	public Travel findbyname(String username) {
+		
+		return this.travellist;
+	}
+}

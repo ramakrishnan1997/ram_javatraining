@@ -1,0 +1,5 @@
+package com.taining.connection;
+
+public class ConnectionFactory {
+
+}

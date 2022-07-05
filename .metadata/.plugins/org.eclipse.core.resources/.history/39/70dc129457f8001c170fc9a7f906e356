@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="">
+CustomerName:<input type="text" name="customername">
+Amount:<input type="text" name="customeramount">
+Date:<input type="date" name="paymentdate">
+</form>
+</body>
+</html>

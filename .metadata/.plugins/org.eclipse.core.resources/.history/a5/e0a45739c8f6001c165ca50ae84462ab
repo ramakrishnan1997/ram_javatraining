@@ -1,0 +1,41 @@
+/**
+ * 
+ */
+function usingWindowObj()
+{
+	window.location="http://www.google.com";
+}
+
+function openWindowObj()
+{
+	window.open('index.html','indexPage');
+}
+function printButton()
+{
+
+	window.print();
+}
+function invoke()
+{
+	
+	var goToGoogleButton =document.getElementById("googleBtn");
+	goToGoogleButton.addEventListener('click',usingWindowObj);
+	var openWindow =document.getElementById("openBtn");
+	openWindow.addEventListener('click',openWindowObj);
+	var print =document.getElementById("printbtn");
+	print.addEventListener('click',printButton);
+	
+}
+functionusingArray()
+{
+	var linkText =["home","client","career","aboutus",downloads];
+	var city=new Array("chennai","coimbatore","delhi");
+	var countries = new Array();
+	countries[0]='nepal';
+	countries[1]='us';
+	countries[2]='India';
+}
+(function(){
+	
+	invoke();
+})();

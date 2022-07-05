@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE employee SYSTEM "empschema.dtd">
+<employees>
+<employee>
+<employeeid>101</employeeid>
+<employee-name>Ram</employee-name>
+<salary>33000</salary>
+</employee>
+
+<employee>
+<employee-id>102</employee-id>
+<employee-name>Chandru</employee-name>
+<salary>29000</salary>
+</employee>
+
+</employees>

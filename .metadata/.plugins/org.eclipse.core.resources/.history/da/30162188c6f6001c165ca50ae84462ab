@@ -1,0 +1,31 @@
+/**
+ * 
+ */
+function usingWindowObj()
+{
+	window.location="http://www.google.com";
+}
+
+function openWindowObj()
+{
+	window.openWindowObj('index.html','indexPage');
+}
+function printButton()
+{
+	window.print();
+}
+function invoke()
+{
+	alert('hi')
+	var goToGoogleButton =document.getElementById("googleBtn");
+	goToGoogleButton.addEventListener('click',usingWindowObj);
+	var openWindow =document.getElementById("openBtn");
+	openWindow.addEventListener('click',openWindowObj);
+	var print =document.getElementById("printbtn");
+	print.addEventListener('click',printButton);
+	
+}
+(function(){
+	alert('hello')
+	invoke();
+});

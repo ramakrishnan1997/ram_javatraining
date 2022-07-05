@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+ integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" 
+ crossorigin="anonymous"></script>
+ <script type="text/javascript">
+ $(function () {
+	$("#regForm").submit(function () {
+		event.preventDefault();
+		var formData
+	})
+})
+ $(function () {
+	 var formData=$("regForm").serilalize();	 
+	 $.ajax({
+		 type:'post',
+		 data:formData,
+		 url:'register',
+		 success:function(resp,textstatus,jqXHR){
+			 
+			 $("msg").text(resp);
+		 },
+		 error:function(jqXHR,textstatus,errorThrown){
+			 console.log(errorThrown)
+			 	 
+		 }
+		  
+	 });
+});
+ </script>
+</head>
+<body>
+<div id="msg"></div>
+<form action="welcome.html" method="post" id="regForm" onsubmit="return validate()">
+
+FirstName:<input type="text" name="firstname" id="firstname"/>
+LastName:<input type="text" name="lasname" id="lastname"/>
+Code:<input type="text" name="code" id="code"/>
+<input type="submit" value="Register"/>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+/**
+ * 
+ */
+function setcookie()
+{
+	var name="collorsize";
+	var value="green";
+	document.cookie =name+"="+value;
+}
+function readcookie()
+{
+	alert("hi")
+	var mycookie = document.cookie;
+	
+	var cookieList = mycookie.split(";");
+	alert(cookieList)
+   var 	sizecookie = cookieList[2];
+alert(sizecookie)
+	var values =sizecookie.split("=");
+	
+	//document.write("i will show models & brand for size "+values); 
+	var colorvalue =values[1];
+	alert(colorvalue)
+	document.body.setAttribute("style","background-color",+colorvalue)
+}
+(function(){
+	setcookie();
+	
+})();

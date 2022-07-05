@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT empolyees (empolyee)>
+<!ELEMENT empolyee (empolyee-id,empolyee-name,salary)>
+<!ELEMENT empolyee-id (#PCDATA)>
+<!ELEMENT empolyee-name (#PCDATA)>
+<!ELEMENT salary (#PCDATA)>

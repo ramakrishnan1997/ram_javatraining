@@ -1,0 +1,33 @@
+package com.training.model;
+
+import java.util.List;
+
+public class CustomerRepository implements com.training.intface.CustomerRepository<Customer> {
+
+	@Override
+	public Customer add(Customer t) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Customer> duetime() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Customer> customername(String customername) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Customer> findbyamount(int amount) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+
+}
